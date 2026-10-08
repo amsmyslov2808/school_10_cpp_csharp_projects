@@ -1,0 +1,59 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Visual Studio / JetBrains local settings and caches
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+*.ipch
+
+# C++ / MSBuild output
+[Dd]ebug/
+[Rr]elease/
+[Dd]ebugPublic/
+x64/
+x86/
+Win32/
+ARM/
+ARM64/
+*.obj
+*.o
+*.pch
+*.pdb
+*.idb
+*.ilk
+*.tlog
+*.lastbuildstate
+*.exe.recipe
+
+# CMake generated files and build directories
+cmake-build-*/
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+
+# C# / .NET output and restored dependencies
+[Bb]in/
+[Oo]bj/
+packages/
+*.nupkg
+*.snupkg
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Publish output
+publish/
+*.publish.xml
