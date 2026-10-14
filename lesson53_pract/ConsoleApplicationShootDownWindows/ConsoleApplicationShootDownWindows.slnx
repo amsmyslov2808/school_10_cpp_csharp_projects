@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ConsoleApplicationShootDownWindows/ConsoleApplicationShootDownWindows.vcxproj" Id="b9dfd858-447c-4020-9eba-2cb7095b57df" />
+</Solution>
