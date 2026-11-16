@@ -47,10 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Db.cs" />
     <Compile Include="Model\Entity\OutcomeCategory.cs" />
     <Compile Include="Model\Entity\Outcome.cs" />
     <Compile Include="Model\Entity\Income.cs" />
     <Compile Include="Model\Entity\IncomeCategory.cs" />
+    <Compile Include="Model\Repository\RepositoryIncomes.cs" />
+    <Compile Include="Model\Repository\RepositoryIncomesCategories.cs" />
+    <Compile Include="Presenter\FormMainPresenter.cs" />
     <Compile Include="View\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,10 +91,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Model\Repository\empty.txt" />
-    <Content Include="Presenter\empty.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

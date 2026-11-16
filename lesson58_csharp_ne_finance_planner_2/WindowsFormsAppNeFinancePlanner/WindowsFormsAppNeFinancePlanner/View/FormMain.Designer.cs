@@ -34,33 +34,35 @@
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageIncome = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonIncomesAddNewIncome = new System.Windows.Forms.Button();
+            this.dataGridViewIncomes = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.buttonIncomesShowResult = new System.Windows.Forms.Button();
+            this.textBoxIncomesMoneyTo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxIncomesMoneyFrom = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxIncomesCategories = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerIncomesFinishDate = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerIncomesStartDate = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPageOutcome = new System.Windows.Forms.TabPage();
             this.tabPageBalance = new System.Windows.Forms.TabPage();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl.SuspendLayout();
             this.tabPageIncome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncomes)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -99,60 +101,63 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.splitContainer1.Panel1.Controls.Add(this.button1);
-            this.splitContainer1.Panel1.Controls.Add(this.dataGridView1);
+            this.splitContainer1.Panel1.Controls.Add(this.buttonIncomesAddNewIncome);
+            this.splitContainer1.Panel1.Controls.Add(this.dataGridViewIncomes);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.splitContainer1.Panel2.Controls.Add(this.button2);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox2);
+            this.splitContainer1.Panel2.Controls.Add(this.buttonIncomesShowResult);
+            this.splitContainer1.Panel2.Controls.Add(this.textBoxIncomesMoneyTo);
             this.splitContainer1.Panel2.Controls.Add(this.label7);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.textBoxIncomesMoneyFrom);
             this.splitContainer1.Panel2.Controls.Add(this.label6);
-            this.splitContainer1.Panel2.Controls.Add(this.comboBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.comboBoxIncomesCategories);
             this.splitContainer1.Panel2.Controls.Add(this.label5);
-            this.splitContainer1.Panel2.Controls.Add(this.dateTimePicker2);
+            this.splitContainer1.Panel2.Controls.Add(this.dateTimePickerIncomesFinishDate);
             this.splitContainer1.Panel2.Controls.Add(this.label4);
-            this.splitContainer1.Panel2.Controls.Add(this.dateTimePicker1);
+            this.splitContainer1.Panel2.Controls.Add(this.dateTimePickerIncomesStartDate);
             this.splitContainer1.Panel2.Controls.Add(this.label3);
             this.splitContainer1.Panel2.Controls.Add(this.label2);
             this.splitContainer1.Size = new System.Drawing.Size(1582, 765);
             this.splitContainer1.SplitterDistance = 1107;
             this.splitContainer1.TabIndex = 0;
             // 
-            // button1
+            // buttonIncomesAddNewIncome
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(140)))), ((int)(((byte)(40)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(116)))), ((int)(((byte)(18)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(58)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(764, 533);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(330, 61);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Добавить новый доход";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonIncomesAddNewIncome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonIncomesAddNewIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(140)))), ((int)(((byte)(40)))));
+            this.buttonIncomesAddNewIncome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonIncomesAddNewIncome.FlatAppearance.BorderSize = 0;
+            this.buttonIncomesAddNewIncome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(116)))), ((int)(((byte)(18)))));
+            this.buttonIncomesAddNewIncome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(58)))));
+            this.buttonIncomesAddNewIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonIncomesAddNewIncome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.buttonIncomesAddNewIncome.Location = new System.Drawing.Point(764, 533);
+            this.buttonIncomesAddNewIncome.Name = "buttonIncomesAddNewIncome";
+            this.buttonIncomesAddNewIncome.Size = new System.Drawing.Size(330, 61);
+            this.buttonIncomesAddNewIncome.TabIndex = 2;
+            this.buttonIncomesAddNewIncome.Text = "Добавить новый доход";
+            this.buttonIncomesAddNewIncome.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dataGridViewIncomes
             // 
-            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridViewIncomes.AllowUserToAddRows = false;
+            this.dataGridViewIncomes.AllowUserToDeleteRows = false;
+            this.dataGridViewIncomes.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(46)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataGridViewIncomes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewIncomes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridViewIncomes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewIncomes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.dataGridViewIncomes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewIncomes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -160,12 +165,14 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(140)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewIncomes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewIncomes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewIncomes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
-            this.Column3});
+            this.Column3,
+            this.Column4,
+            this.Column5});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -173,37 +180,17 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.dataGridView1.Location = new System.Drawing.Point(13, 60);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.RowTemplate.Height = 32;
-            this.dataGridView1.Size = new System.Drawing.Size(1081, 431);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 10;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 200;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.MinimumWidth = 10;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.MinimumWidth = 10;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 200;
+            this.dataGridViewIncomes.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewIncomes.EnableHeadersVisualStyles = false;
+            this.dataGridViewIncomes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.dataGridViewIncomes.Location = new System.Drawing.Point(13, 60);
+            this.dataGridViewIncomes.Name = "dataGridViewIncomes";
+            this.dataGridViewIncomes.ReadOnly = true;
+            this.dataGridViewIncomes.RowHeadersVisible = false;
+            this.dataGridViewIncomes.RowHeadersWidth = 82;
+            this.dataGridViewIncomes.RowTemplate.Height = 32;
+            this.dataGridViewIncomes.Size = new System.Drawing.Size(1081, 431);
+            this.dataGridViewIncomes.TabIndex = 1;
             // 
             // label1
             // 
@@ -216,32 +203,32 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Таблица доходов";
             // 
-            // button2
+            // buttonIncomesShowResult
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(140)))), ((int)(((byte)(40)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(116)))), ((int)(((byte)(18)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(58)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button2.Location = new System.Drawing.Point(13, 533);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(330, 61);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Показать";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonIncomesShowResult.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonIncomesShowResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(140)))), ((int)(((byte)(40)))));
+            this.buttonIncomesShowResult.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonIncomesShowResult.FlatAppearance.BorderSize = 0;
+            this.buttonIncomesShowResult.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(116)))), ((int)(((byte)(18)))));
+            this.buttonIncomesShowResult.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(58)))));
+            this.buttonIncomesShowResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonIncomesShowResult.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.buttonIncomesShowResult.Location = new System.Drawing.Point(13, 533);
+            this.buttonIncomesShowResult.Name = "buttonIncomesShowResult";
+            this.buttonIncomesShowResult.Size = new System.Drawing.Size(330, 61);
+            this.buttonIncomesShowResult.TabIndex = 3;
+            this.buttonIncomesShowResult.Text = "Показать";
+            this.buttonIncomesShowResult.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // textBoxIncomesMoneyTo
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.textBox2.Location = new System.Drawing.Point(13, 471);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(324, 42);
-            this.textBox2.TabIndex = 11;
+            this.textBoxIncomesMoneyTo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.textBoxIncomesMoneyTo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxIncomesMoneyTo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.textBoxIncomesMoneyTo.Location = new System.Drawing.Point(13, 471);
+            this.textBoxIncomesMoneyTo.Name = "textBoxIncomesMoneyTo";
+            this.textBoxIncomesMoneyTo.Size = new System.Drawing.Size(324, 42);
+            this.textBoxIncomesMoneyTo.TabIndex = 11;
             // 
             // label7
             // 
@@ -255,15 +242,15 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Сумма до";
             // 
-            // textBox1
+            // textBoxIncomesMoneyFrom
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.textBox1.Location = new System.Drawing.Point(8, 379);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(324, 42);
-            this.textBox1.TabIndex = 9;
+            this.textBoxIncomesMoneyFrom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.textBoxIncomesMoneyFrom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxIncomesMoneyFrom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.textBoxIncomesMoneyFrom.Location = new System.Drawing.Point(8, 379);
+            this.textBoxIncomesMoneyFrom.Name = "textBoxIncomesMoneyFrom";
+            this.textBoxIncomesMoneyFrom.Size = new System.Drawing.Size(324, 42);
+            this.textBoxIncomesMoneyFrom.TabIndex = 9;
             // 
             // label6
             // 
@@ -277,22 +264,22 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Сумма от";
             // 
-            // comboBox1
+            // comboBoxIncomesCategories
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxIncomesCategories.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.comboBoxIncomesCategories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxIncomesCategories.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxIncomesCategories.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.comboBoxIncomesCategories.FormattingEnabled = true;
+            this.comboBoxIncomesCategories.Items.AddRange(new object[] {
             "все",
             "1",
             "2",
             "3"});
-            this.comboBox1.Location = new System.Drawing.Point(8, 281);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(324, 44);
-            this.comboBox1.TabIndex = 7;
+            this.comboBoxIncomesCategories.Location = new System.Drawing.Point(8, 281);
+            this.comboBoxIncomesCategories.Name = "comboBoxIncomesCategories";
+            this.comboBoxIncomesCategories.Size = new System.Drawing.Size(324, 44);
+            this.comboBoxIncomesCategories.TabIndex = 7;
             // 
             // label5
             // 
@@ -306,14 +293,14 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Категория";
             // 
-            // dateTimePicker2
+            // dateTimePickerIncomesFinishDate
             // 
-            this.dateTimePicker2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.dateTimePicker2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.dateTimePicker2.Location = new System.Drawing.Point(8, 181);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(324, 42);
-            this.dateTimePicker2.TabIndex = 5;
+            this.dateTimePickerIncomesFinishDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.dateTimePickerIncomesFinishDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.dateTimePickerIncomesFinishDate.Location = new System.Drawing.Point(8, 181);
+            this.dateTimePickerIncomesFinishDate.Name = "dateTimePickerIncomesFinishDate";
+            this.dateTimePickerIncomesFinishDate.Size = new System.Drawing.Size(324, 42);
+            this.dateTimePickerIncomesFinishDate.TabIndex = 5;
             // 
             // label4
             // 
@@ -327,14 +314,14 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Конец периода";
             // 
-            // dateTimePicker1
+            // dateTimePickerIncomesStartDate
             // 
-            this.dateTimePicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.dateTimePicker1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.dateTimePicker1.Location = new System.Drawing.Point(8, 94);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(324, 42);
-            this.dateTimePicker1.TabIndex = 3;
+            this.dateTimePickerIncomesStartDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.dateTimePickerIncomesStartDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.dateTimePickerIncomesStartDate.Location = new System.Drawing.Point(8, 94);
+            this.dateTimePickerIncomesStartDate.Name = "dateTimePickerIncomesStartDate";
+            this.dateTimePickerIncomesStartDate.Size = new System.Drawing.Size(324, 42);
+            this.dateTimePickerIncomesStartDate.TabIndex = 3;
             // 
             // label3
             // 
@@ -383,6 +370,41 @@
             this.tabPageBalance.Text = "Баланс";
             this.tabPageBalance.UseVisualStyleBackColor = true;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ID";
+            this.Column1.MinimumWidth = 10;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Дата и Время";
+            this.Column2.MinimumWidth = 10;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Категория дохода";
+            this.Column3.MinimumWidth = 10;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Комментарий";
+            this.Column4.MinimumWidth = 10;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Сумма";
+            this.Column5.MinimumWidth = 10;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
@@ -398,6 +420,7 @@
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ne Finance Planner";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabControl.ResumeLayout(false);
             this.tabPageIncome.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -405,7 +428,7 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncomes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -418,22 +441,24 @@
         private System.Windows.Forms.TabPage tabPageBalance;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button buttonIncomesAddNewIncome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button buttonIncomesShowResult;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
+        internal System.Windows.Forms.DataGridView dataGridViewIncomes;
+        internal System.Windows.Forms.ComboBox comboBoxIncomesCategories;
+        internal System.Windows.Forms.DateTimePicker dateTimePickerIncomesFinishDate;
+        internal System.Windows.Forms.DateTimePicker dateTimePickerIncomesStartDate;
+        internal System.Windows.Forms.TextBox textBoxIncomesMoneyTo;
+        internal System.Windows.Forms.TextBox textBoxIncomesMoneyFrom;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }
