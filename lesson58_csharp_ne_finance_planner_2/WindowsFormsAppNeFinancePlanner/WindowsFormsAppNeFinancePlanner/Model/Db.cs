@@ -8,10 +8,12 @@ using WindowsFormsAppNeFinancePlanner.Model.Repository;
 
 namespace WindowsFormsAppNeFinancePlanner.Model
 {
+    // Общее хранилище приложения: пока данные живут в памяти, а не в базе на диске.
     internal class Db
     {
         private static Db _instance = null;
 
+        // Singleton: создаём хранилище при первом обращении и затем возвращаем тот же объект.
         public static Db GetInstance()
         {
             if (_instance == null)
@@ -22,22 +24,27 @@ namespace WindowsFormsAppNeFinancePlanner.Model
         }
 
 
+        // Репозитории отдельно управляют доходами и справочником их категорий.
         private RepositoryIncomes _repositoryIncomes;
         private RepositoryIncomesCategories _repositoryIncomesCategories;
 
+        // Закрытый конструктор не позволяет создавать отдельные хранилища через new снаружи.
         private Db()
         {
             _repositoryIncomes = new RepositoryIncomes();
             _repositoryIncomesCategories = new RepositoryIncomesCategories();
 
+            // Демонстрационные записи создаются один раз, вместе с экземпляром хранилища.
             FillMockData();
         }
 
+        // Возвращаем существующий репозиторий, чтобы все обращения работали с одними доходами.
         public RepositoryIncomes GetRepositoryIncomes()
         {
             return _repositoryIncomes;
         }
 
+        // Этот же справочник используется при создании и отображении доходов.
         public RepositoryIncomesCategories GetRepositoryIncomesCategories()
         {
             return _repositoryIncomesCategories;
@@ -45,9 +52,11 @@ namespace WindowsFormsAppNeFinancePlanner.Model
 
         private void FillMockData()
         {
+            // Сначала создаём категории: репозиторий назначит им идентификаторы 1 и 2.
             _repositoryIncomesCategories.AddCategory(new IncomeCategory { Name = "Зарплата" });
             _repositoryIncomesCategories.AddCategory(new IncomeCategory { Name = "Фриланс" });
 
+            // Доход хранит ссылку на категорию из справочника, а не отдельную копию её названия.
             _repositoryIncomes.AddIncome(new Income
             {
                 OccurredAt = DateTime.Now,
